@@ -1,8 +1,8 @@
-image: ubuntu:18.04
+image: mwienk/docker-lftp:latest
 
-before_script:
-  - apt-get update -qy
-  - apt-get install -y lftp
+#before_script:
+  #- apt-get update -qy
+  #- apt-get install -y lftp
 
 build:
   script:
