@@ -1,0 +1,32 @@
+
+		<script type="text/javascript">
+		//	$(document).ready(function() { 
+		//		var $tiles = $('#tiles');
+		//
+		//		$tiles.imagesLoaded( function(){
+		//			$tiles.masonry({
+		//				itemSelector : '.tile',
+		//				isAnimated: true,
+		//			});
+		//		});
+		//
+		//  	});
+
+			function show_promo(id,promo_title,promo_image,promo_text){
+				$('#hidden_div').load("/hotspot/promotion_click/"+id);
+				if (promo_image>''){
+					var txt = "<img class='pull-right' style='padding-right:5px;max-width:100px;max-height:100px;' src='"+promo_image+"'>"+decodeURIComponent(promo_text);
+				} else {
+					var txt = decodeURIComponent(promo_text);
+				}
+				bootbox.dialog({
+					message: "<div style='min-height:120px;'>"+txt+'</div>',
+					title: decodeURIComponent(promo_title),
+					buttons: {}
+				});
+			}
+		
+		</script>
+		
+	</body>
+</html>

@@ -1,0 +1,44 @@
+		<div id='container' class="container row-fluid">
+			<div class="hidden-xs col-sm-1 col-md-2 col-lg-2"></div>
+				<div id='login_container' >
+
+					<table align="center" id='page_logo'>
+						<tr>
+							<td align="center" >
+								<img class="hidden-xs logo_desktop col-xs-12 col-sm-12 col-md-12 col-lg-12" src="{{banner_logo_desktop}}">
+								<img class="hidden-sm hidden-md hidden-lg hidden-xl logo_mobile col-xs-12 col-sm-12 col-md-12 col-lg-12" src="{{banner_logo_mobile}}">
+							</td>
+						</tr>
+					</table>
+
+
+
+					<div id='purchase_buttons' class=" "  style='text-align:center;'>
+						<h4>Hotspot vouchers are available {{buy_location_details}}</h4>
+
+						<div style=" border: 0px solid #D2322D;text-align:center;">
+
+						<h4>Purchase a Hotspot Voucher</h4>
+
+						{{products_array}}
+							<a class='btn btn-inverse field_input hotspot_button' href='{{product_purchase_link}}' >
+								<span class='pull-right'>{{currency}} {{product_cost}}</span>
+								<span class='pull-left'>{{product_title}}</span>
+							</a>
+							<br>
+							<small span='{{product_expire_months_show}}'>(Expires {{product_expire_months}} after purchase)<br><br></small>
+						{{/products_array}}
+
+						</div>
+					</div>
+
+
+					<div id='purchase_back_button' class=" "  style='text-align:center;'>
+						<a id="btn_cancel" href='javascript:history.back();' class='btn btn-primary field_input hotspot_button'><i class='fa fa-chevron-left '></i> &nbsp;  Cancel </a>
+					</div>
+
+
+
+
+				</div>
+		</div>

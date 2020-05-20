@@ -1,0 +1,182 @@
+
+		<div id='container' class="container row-fluid">
+			<div class="hidden-xs col-sm-1 col-md-2 col-lg-2"></div>
+				<div id='login_container' >
+
+					<table align="center" id='page_logo' >
+						<tr>
+							<td align="center" >
+								<img class="hidden-xs logo_desktop col-xs-12 col-sm-12 col-md-12 col-lg-12" src="{{banner_logo_desktop}}">
+								<img class="hidden-sm hidden-md hidden-lg hidden-xl logo_mobile col-xs-12 col-sm-12 col-md-12 col-lg-12" src="{{banner_logo_mobile}}">
+							</td>
+						</tr>
+					</table>
+
+					<table align="center"  class='table'>
+
+						<tr>
+							<td colspan="2" align="center">
+								<div style="text-align: center;" class="st"><h3>You have been logged out</h3></div>
+							</td>
+						</tr>
+
+						<tr style='{{show_if_twitter_account}}'>
+							<td colspan="2" align="center">
+								<div style="margin-top: 15px; margin-bottom: 15px;">
+									<h3 style="margin-top: 10px; margin-bottom: 0px; text-align:center;"><i class="fa fa-twitter"></i> <a href='http://twitter.com/{{twitter_account}}' target='_blank'>{{twitter_account}}</a></h3>
+								</div>
+							</td>
+						</tr>
+
+
+						<tr style='{{show_if_portal_link}}'>
+							<td colspan="2" align="center">
+								<div style="margin-top: 15px; margin-bottom: 15px;">
+									<a class="btn btn-warning field_input hotspot_button" href='{{portal_link}}'><i class='fa fa-university '></i> &nbsp; {{portal_link_button_text}}</a>
+								</div>
+							</td>
+						</tr>
+
+
+						<tr style='{{show_if_customer}}'>
+							<td class="status_heading">Customer</td><td><b> {{customer_title}}</b></td>
+						</tr>
+
+
+						<tr style='{{show_if_voucher}}'>
+							<td class="status_heading">Voucher Details</td><td>
+								{{voucher_explained}}
+							</td>
+						</tr>
+						<tr style='{{show_if_voucher_data_limit}}'>
+							<td class="status_heading">Data Usage</td><td>{{voucher_data_usage}}</td>
+						</tr>
+						<tr style='{{show_if_voucher_time_limit}}'>
+							<td class="status_heading">Time Usage</td><td>{{voucher_time_usage}}</td>
+						</tr>
+
+
+						<tr style='{{show_if_prepaid}}'>
+							<td class="status_heading">Data Limit</td><td><b> {{usage_limit}}</b></td>
+						</tr>
+
+						<tr style='{{show_if_package_explained}}'>
+							<td class="status_heading">Package</td><td><b> {{package_explained}}</b></td>
+						</tr>
+
+						<tr style='{{show_if_capped}}'>
+							<td colspan=2 align=center>
+								<span class='btn btn-danger'>Account Capped {{capped_package}}</span>
+							</td>
+						</tr>
+
+						<tr>
+							<td colspan="2" style="padding-top: 0px; padding-bottom: 0px;">
+								<hr style="margin-top: 0px; margin-bottom: 0px;">
+							</td>
+						</tr>
+
+
+						<tr style='{{show_if_usage}}'>
+							<td class="status_heading">Usage to Date</td><td>
+								<span style='{{if_topups}}'>
+									<nobr>{{usage_to_date}} of {{total_limit}}</nobr>
+									<nobr>( {{usage_limit}} + {{topup_to_date}} Topup )</nobr>
+								</span>
+								<span style='{{if_no_topups}}'>
+									{{usage_detail}}
+								</span>
+								<span style='{{show_if_usage_percent}}'>
+									&nbsp;&nbsp;
+									<span class='label label-{{usage_class}}' style=''>
+										{{usage_percent}}%
+									</span>
+								</span>
+
+							</td>
+						</tr>
+
+
+						<tr style='{{if_this_session_time_left}}'>
+							<td class='h'><nobr>Time Remaining</nobr></td><td>{{this_session_time_left}}</td>
+						</tr>
+
+
+						<tr style='{{if_trial_with_data_limit}}'>
+							<td class="status_heading">Data Remaining</td><td>
+								{{free_trial_data_remaining}} of {{free_trial_data_limit}}
+							</td>
+						</tr>
+
+
+						<tr style='{{if_trial_with_time_limit}}'>
+							<td class="status_heading">Time Remaining</td><td>
+								{{free_trial_time_remaining}} of {{free_trial_time_limit}}
+							</td>
+						</tr>
+
+
+						<tr>
+							<td colspan="2" style="padding-top: 0px; padding-bottom: 0px;">
+								<hr style="margin-top: 0px; margin-bottom: 0px;">
+							</td>
+						</tr>
+
+						<tr>
+							<td class="status_heading">This Session</td><td>
+								{{this_session_data_used}}
+							</td>
+						</tr>
+						<tr>
+							<td  align="right" class='h'>Duration</td><td>
+								{{this_session_time_used}}
+							</td>
+						</tr>
+
+
+
+						<tr>
+							<td colspan="2" class="padding-top: 0px; padding-bottom: 0px;">
+								<hr style="margin-top: 0px; margin-bottom: 0px;">
+							</td>
+						</tr>
+
+
+						<tr style='{{show_if_not_trial_not_voucher}}'>
+							<td class="status_heading">Username</td><td>
+								{{username}}
+							</td>
+						</tr>
+
+						<tr style='{{show_if_voucher}}'>
+							<td class="status_heading">Voucher No</td><td>
+								{{username}}
+							</td>
+						</tr>
+
+
+						<tr style='{{if_show_save_login}}'><td colspan=2 align=center>
+							<a href="{{save_login_link}}" class='btn btn-success hotspot_button'>
+								Save login for this device?
+							</a>
+						</td></tr>
+
+
+
+						<tr><td colspan=2 align='center'>
+							<small style='color:#999'>
+								<nobr>IP Address: {{ip}},</nobr> <nobr>MAC Address: {{mac}}</nobr>
+							</small>
+						</td></tr>
+
+
+
+						<tr><td colspan=2>
+							<a  href="{{link_login}}" class='btn btn-danger hotspot_button' style='margin-left:20px;'><i class='fa fa-lock '></i> &nbsp; Log In</a>
+						</td></tr>
+
+					</table>
+
+
+				</div>
+		</div>

@@ -1,0 +1,50 @@
+
+<strong>DATATILL END USER LICENSE AGREEMENT</strong>
+<p>
+<strong>INTRODUCTION</strong>
+The software, DataTill, is a management tool for use by Companies, who provide Internet and other Ancillary Services, and their employees. The terms also apply to any DataTill updates, supplements, Internet-based services, mobile applications and support services for this software, unless other terms accompany those items. If so, those terms apply.
+
+The license terms are an agreement between DataTill and you, the End User to use the software as described above. The End User must accept the terms and conditions set out below for them to use the Software.
+
+It is the End User&rsquo;s responsibility and duty to familiarize themselves with the Terms and conditions set out below. Please note that the use of the Software by the End User, expresses understanding and acceptance of these terms and conditions.
+
+The End User furthermore acknowledges that, should they not accept the terms of use, they will not be permitted to use the software, and DataTill will, under no circumstances, be obliged to issue a license to its Software.
+
+The End User further acknowledges that non-authorised use of DataTill&rsquo;s Software is a violation of its intellectual property rights as protected in terms of the copyright laws of South Africa.
+
+<strong>LICENSE</strong>
+DataTill provides Internet-based services with the software. It may change or cancel them at any time.
+<ol><li><u>Ownership of the Software and related Documentation:</u> A Valid software license agreement is required for a valid installation of DataTill on a user&rsquo;s Server. Such Terms and conditions are set out and governed by the Software license agreement. It is understood that throughout the term of this License Agreement, the installed software system (&ldquo;<strong>Software</strong>&rdquo;) and accompanying online guides (&ldquo;<strong>Documentation</strong>&rdquo;) remain the property of DataTill. The End User acknowledges that, the Software and Documentation are protected in terms of the South African copyright laws and that use thereof is granted in terms a license of use, not to be understood as a transfer of ownership rights in relation thereto. In this respect, and all others, DataTill expressly reserves all its legal rights.</li></ol>
+<ol start="2"><li><u>Grant of License:</u> Upon acceptance and endorsement of this License Agreement DataTill shall grant the End User a revocable, non-exclusive, non-transferable license to install and use its Software on a server identified as being in the possession of the End User. The End User acknowledges that any license granted has been issued on an individual basis and that, should the End User have several Host Computers&rsquo;, a separate license shall be required in relation to each.
+</li></ol>
+<ol start="3"><li><u>Restrictions on the Use and Transfer of DataTill Software: </u>Upon the issuing of a license the End User shall:
+    <ol type='a'>
+        <li>be permitted to install, utilise, access, display and run a single copy of the Software per single server, such as a Linux host or other device ("<strong>Host Computer</strong>"). The End User acknowledges that a single software license may not be utilised by more than one server at any given time.</li>
+        <li>not be permitted to make a copy of the Software or Documentation except for the sole purpose of providing backup thereof or for archival purposes. In furtherance hereof, the End User acknowledges that they may not rent, lease, lend or provide commercial hosting services, in relation to the Software, or otherwise transfer or assign the right of use, in relation thereto, to another. The End User accepts and acknowledges that should they be found guilty of committing any of the above, or related, acts that such shall constitute a breach of this License Agreement and shall render them liable for a claim in damages amongst other legal remedies available to DataTill.</li>
+        <li>not permit reverse engineering, decompiling, or deconstruction of the Software, except where expressly permitted in law. In addition to this the End User is prohibited from creating derivative works from the Software or Documentation.</li>
+    </ol></li></ol>
+<strong>TERMINATION OF THIS AGREEMENT: </strong>
+DataTill may terminate this Agreement should the End User fail to comply with its terms and conditions. In the event of cancellation, the End User shall be held liable for the total destruction of all copies of Software and Documentation in its possession and shall furnish DataTill with proof thereof to the latter&rsquo;s satisfaction.
+
+<strong>LIMITED WARRANTY</strong>
+To the extent permitted by law, the Software is provided on a &lsquo;<em>voetstoots&rsquo; </em>(as is) basis and the parties agree that DataTill shall not be bound by any express, implied or tacit term, representation, warranty, promise or the like not recorded herein. DataTill specifically disclaims any implied warranties or conditions of merchantability, satisfactory quality and fitness for any particular purpose. The End User understands that support services may be limited for versions of the software older than current version.
+
+<strong>LIMITATION OF LIABILITY</strong>
+To the extent permitted by law the parties agree that DataTill, its affiliates or suppliers shall not be held liable for any direct, special, incidental, consequential or other damages (including loss of profit, loss of data, or downtime costs incurred), which may have arisen from the use, inability to use, or in consequence of such use of the Software or Documentation. To this extent the End User accepts all risk attached to the use of the Software and Documentation. In addition to this, should the Software prove defective, the End User shall bear the cost of all service, repair or correction which may be required. The End User further accepts full responsibility for arranging insurance coverage in relation to any loss which may be suffered on account of the Software malfunctioning.
+
+In the event where a judicial body finds DataTill liable for any claim in damages, which the law prohibits the parties from contracting out of, such a claim shall be limited to the monetary value of one moth&rsquo;s license fee received by DataTill as payment from the End User. To this extent the End User indemnifies DataTill from any claim in excess of such amount paid by it.
+
+This limitation applies to anything related to the software, services, content (including code) on third party Internet sites, or third-party programs; and claims for breach of contract, breach of warranty, guarantee or condition, strict liability, negligence, or other delict to the extent permitted by applicable law.
+
+The End User furthermore agrees to uphold the legal requirements of operation in the industry and country in which they operate. DataTill additionally states that it is the End User&rsquo;s own responsibility and obligation to adhere to and carry out the compliance requirements (such as the Protection of Personal Information Act (RSA) and General Data Protection Regulation (EU)) of the country in which they operate.
+
+<strong>APPLICABLE LAW</strong>
+Applicable Law and jurisdiction is that of South Africa, specifically the Western Cape.
+
+<strong>CONTACT INFORMATION</strong>
+For all contact and enquiries relating to this License Agreement, kindly contact DataTill at:
+</p>
+Eden Meander Mall
+George, Western Cape
++27 44 813 5002
+<a href="mailto:info@datatill.com">info@datatill.com</a>

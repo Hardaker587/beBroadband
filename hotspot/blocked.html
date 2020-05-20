@@ -1,0 +1,140 @@
+<html>
+<head>
+	<title>Unauthorized Connection - COMPANYNAME</title>
+	<link href="SITEURL/assets/css/bootstrap.css" rel="stylesheet">
+	<link href="SITEURL/assets/css/font-awesome.css" rel="stylesheet">
+	<link href="SITEURL/assets/css/bootstrap-switch.css" rel="stylesheet">
+	<link href="SITEURL/assets/css/custom.css" rel="stylesheet">
+
+	<script src="SITEURL/assets/js/jquery.1.10.2.min.js"></script>
+	<script src="SITEURL/assets/js/bootstrap.min.js"></script>
+	<script src="SITEURL/assets/js/bootstrap-switch.min.js"></script>
+	<script src="SITEURL/assets/js/bootbox.min.js"></script>
+	<script src="SITEURL/assets/js/jquery.masonry.min.js"></script>
+	<script src="SITEURL/assets/js/custom.js"></script>
+
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320">
+	<meta http-equiv="cleartype" content="on">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+
+	<style type="text/css">
+
+	    h4 {
+		    line-height: 30px;
+		    margin-top: 0px;
+		    font-size: 17px;
+	    }
+
+
+@media(max-width:767px) {
+	#login_container {width:310px; margin: 0 auto;}
+	#page_logo	{max-width: 300px; }
+/*
+	.logo_mobile  { display: block; max-width:200px;}
+	.logo_desktop { display: none;  max-width:250px;}
+*/
+}
+@media(min-width:768px) {
+	#login_container {width:600px; margin: 0 auto;}
+	#page_logo	{max-width: 600px; }
+/*
+	.logo_mobile  { display: none;  max-width:200px;}
+	.logo_desktop { display: block; max-width:250px;}
+*/
+}
+/*
+@media(min-width:992px) { login_container {width:625px;} }
+@media(min-width:1200px){ login_container {width:625px;} }
+*/
+
+	</style>
+
+
+</head>
+
+<body style="padding: 10px 0px 0px;">
+	<div id='container' class="container row-fluid">
+		<div class="hidden-xs col-sm-1 col-md-2 col-lg-2 border"></div>
+		<div id='login_container' >
+
+			<table align="center" id='page_logoo'>
+				<tr>
+					<td align="center" >
+						<img class="hidden-xs logo_desktop col-xs-12 col-sm-12 col-md-12 col-lg-12" src="HOTSPOTLOGOMOBILE">
+						<img class="hidden-sm hidden-md hidden-lg hidden-xl logo_mobile col-xs-12 col-sm-12 col-md-12 col-lg-12" src="HOTSPOTLOGODESKTOP">
+					</td>
+				</tr>
+
+
+
+
+
+				<tr>
+					<td align="center" >
+
+						<div id='message' class='alert alert-danger' style="margin-top: 50px;">
+
+							<h3 style='margin-bottom: 0px; margin-top: 10px;'>
+								<span class="hidden-xs">
+									<i class="fa fa-ban" aria-hidden="true"></i>
+									&nbsp;
+								</span>
+								Unauthorized Connection
+							</h3>
+
+						</div>
+
+						<div class='alert alert-default' style='line-height: 30px;'>
+
+							<br>
+							<h4>Your connection is not authorized for use on this network</h4>
+
+							<br>
+							BLOCK_MESSAGE
+
+						</div>
+
+					</td>
+				</tr>
+
+			</table>
+
+		</div>
+	</div>
+
+
+	<form name="blocked" action="SITEURL/hotspot/log_blocked" method="post">
+		<input type="hidden" id="ip"				value="$(ip)">
+		<input type="hidden" id="mac"				value="$(mac)">
+		<input type="hidden" id="hotspot_address"	value="$(server-address)">
+		<input type="hidden" id="identity"			value="$(identity)">
+		<input type="hidden" id="link" 				value="$(link-orig)">
+	</form>
+
+
+	<br>
+	<br>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		$.ajax({
+			type: "POST",
+			url: "SITEURL/hotspot/log_blocked",
+			data:{
+				ip				: $('#ip').val(),
+				mac				: $('#mac').val(),
+				identity		: $('#identity').val(),
+				hotspot_address	: $('#hotspot_address').val(),
+				link			: $('#link').val(),
+			},
+			success: function(data){
+			},
+			error: function() {
+			}
+		});
+  	});
+</script>
+
+</body>
+</html>

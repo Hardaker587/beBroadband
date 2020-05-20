@@ -1,0 +1,107 @@
+
+.panel-title{
+    font-size: 14px !important;
+}
+.menu_item{
+    font-size: 14px !important;
+    color: black !important;
+}
+
+.badge_success{
+    background-color: #5cb85c !important;
+    border-color: #4cae4c !important;
+}
+
+.leads_menu{
+    /*width:20%;*/
+    margin-top: 5px;
+}
+
+#accordion{
+    width: 100%;
+    margin-top: 20px;
+    margin-right:10px;
+}
+
+.accordion-container{
+    width: 200px;
+}
+.fa-space {
+    padding-right: 5px;
+}
+.badge-header{
+    margin-right: 0px;
+}
+.fa-caret-right-header {
+    margin-right: -45px;
+}
+.heading-text{
+    margin-left: 8px;
+}
+.badge{
+    float: right;
+    background-color: #d9534f;
+    display: inline;
+    padding: .2em .6em .3em;
+    font-size: 75%;
+    font-weight: bold;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25em;
+}
+
+.panel-collapse>.list-group .list-group-item:first-child {
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+}
+.panel-collapse>.list-group .list-group-item {border-width: 1px 0;}
+.panel-collapse>.list-group {margin-bottom: 0;}
+.panel-collapse .list-group-item {border-radius:0;}
+
+.panel-collapse .list-group .list-group {
+    margin: 0;
+    margin-top: 10px;
+}
+.panel-collapse .list-group-item li.list-group-item {margin: 0 -15px;border-top: 1px solid #f9f9f9 !important;border-bottom: 0;padding-left: 30px;}
+.panel-collapse .list-group-item li.list-group-item:last-child {padding-bottom: 0;}
+
+.list-group-item-depth-2 {
+    margin: 0 -15px;
+    border-top: 1px solid #ddd !important;border-bottom: 0;
+    padding-left: 45px !important;
+    height:37px;
+    padding-top: 8px;
+    margin-right: 0px;
+    margin-top: -2px;
+}
+.panel-heading:first-child{
+    border-top: 1px solid transparent;
+}
+.panel-heading{
+    border-top: 1px solid transparent;
+    color: #333;
+    background-color: #f9f9f9 !important;
+    border-color: #adadad;
+
+}
+.btn-alignment{
+    margin-left:-15px;
+}
+
+.panel-item{
+    padding-left: 7px;
+    padding-right: 7px;
+    border-top-left-radius: 0px !important;
+    border-top-right-radius: 0px !important;
+}
+.panel-item:hover {
+    background-color: #f9f9f9;
+
+    cursor: hand;
+}
+.panel-item.active{
+    background-color : #e0e0e0 !important;
+}

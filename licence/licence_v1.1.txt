@@ -1,0 +1,27 @@
+DataTill End User License Agreement
+
+V1.1, Issued 2018-05-09
+
+DataTill is willing to license this Software to You only if You accept all of the terms in this License Agreement. Please read the terms carefully before using the Software, because by installing or using this Software You are agreeing to be bound by the terms of this agreement. If You do not agree to these terms, DataTill will not license this Software to You, and You may not use the Software.
+
+SOFTWARE LICENSE
+Ownership of the Software. The installed software system ('Software') and the accompanying online guides ('Documentation') are owned by DataTill and are protected by South African copyright laws and by international treaties. This Software is licensed, not sold.
+
+DataTill reserves all rights not expressly granted.
+
+Grant of License. DataTill grants to You, as an individual, a revocable, nonexclusive, nontransferable license to install and use the Software on a server in Your possession. You have to own separate license for every host.
+
+Restrictions on Use and Transfer. You may install, use, access, display and run one copy of the Software on a single server, such as a Linux host or other device ("Host Computer"). One software license may not be used by more than one server at any one time.
+
+You may not copy the Software or Documentation except solely for backup or archival purposes. You may not rent, lease, lend or provide commercial hosting services with the Software or otherwise transfer or assign the right to use the Software except as provided below. You may not reverse engineer, decompile, or disassemble the Software, except and only to the extent that such activity is expressly permitted by applicable law, notwithstanding this limitation. You may not create derivative works from the Software or the Documentation.
+
+Termination. DataTill may terminate this Agreement if You fail to comply with its terms and conditions. In such event, You must destroy all copies of the Software in Your possession.
+
+Contact Information. For all contacts regarding this license agreement, please contact DataTill via electronic mail at info@datatill.com.
+
+LIMITED WARRANTY
+Disclaimer. To the extent allowed by local law, the Software is provided to You 'as is' without warranty of any kind, whether oral or written, express or implied. DataTill specifically disclaims any implied warranties or conditions of merchantability, satisfactory quality, non-infringement and fitness for a particular purpose. You may have other rights that vary by country, state, or province.
+
+Limitation of liability. Except to the extent prohibited by local law, in no event will DataTill or its affiliates or suppliers be liable for direct, special, incidental, consequential or other damages (including lost profit, lost data, or downtime costs), arising out of the use, inability to use, or the results of use of the Software, whether based in warranty, contract, tort or other legal theory, and whether or not advised of the possibility of such damages. Your use of the Software is entirely at Your own risk. Should the Software prove defective, You assume the entire cost of all service, repair or correction.
+
+

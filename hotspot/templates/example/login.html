@@ -1,0 +1,244 @@
+
+		<div id='container' class="container row-fluid">
+			<div class="hidden-xs col-sm-1 col-md-2 col-lg-2"></div>
+				<div id='login_container' >
+
+					<table align="center" id='page_logo'>
+						<tr>
+							<td align="center" >
+								<img class="hidden-xs logo_desktop col-xs-12 col-sm-12 col-md-12 col-lg-12" src="{{banner_logo_desktop}}">
+								<img class="hidden-sm hidden-md hidden-lg hidden-xl logo_mobile col-xs-12 col-sm-12 col-md-12 col-lg-12" src="{{banner_logo_mobile}}">
+							</td>
+						</tr>
+					</table>
+
+				<div id='tiles'>
+
+
+
+					<div id="display_location" class="tile">
+						<h3 style="margin-top: 10px; margin-bottom: 0px; text-align:center;">Welcome to<br>{{hotspot_location_name}}</h3>
+					</div>
+
+
+
+
+					<div id="twitter_link" class="tile">
+						<h3 style="margin-top: 10px; margin-bottom: 0px; text-align:center;"><i class="fa fa-twitter"></i> {{twitter_account}}</h3>
+					</div>
+
+
+
+
+					<div id="partner" class="tile" >
+						<div style="margin-top: 15px; margin-bottom: 10px; text-align:center;">
+							<h4>{{partner_text}}</h4>
+							<img class="hidden-xs logo_desktop" src="{{partner_logo_desktop}}" style='max-width:200px;'>
+							<img class="hidden-sm hidden-md hidden-lg hidden-xl logo_mobile" src="{{partner_logo_mobile}}" style='max-width:200px;'>
+						</div>
+					</div>
+
+
+
+
+					<div id="sponsor" class="tile">
+						<div style="margin-top: 15px; margin-bottom: 10px; text-align:center;">
+							<h4>{{sponsor_text}}</h4>
+							<a href='{{sponsor_url}}' target='_blank'>
+								<img class="hidden-xs logo_desktop" src="{{sponsor_logo_desktop}}" style='max-width:200px;'>
+								<img class="hidden-sm hidden-md hidden-lg hidden-xl logo_mobile" src="{{sponsor_logo_mobile}}" style='max-width:200px;'>
+							</a>
+						</div>
+					</div>
+
+
+
+
+					<div id="free_trial" class="tile">
+						<form name='trial' action='{{login_link}}' method='post' style="margin-bottom: 5px; border: 0px solid #3276B1;  text-align:center;">
+							<div class="box-content" style="padding-bottom: 10px;">
+								<h4>
+									Limited Free Internet available
+									<br>
+									{{free_trial_details}} Free Daily
+								</h4>
+
+								<div id='accept_terms_block' class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="margin-bottom: 10px;margin-top: 10px; margin-top:0px; height:20px; {{terms_accepted}}">
+
+									<nobr>
+										<input class='make-switch' type="checkbox" id="accept_terms" checked >
+										<small style='font-size: 12px; font-weight: 400;'>
+											&nbsp; Accept <a href="{{terms_link}}">Terms & Conditions</a>
+										</small>
+									</nobr>
+
+				 				</div>
+
+				 				<!-- Enable the line below to enforce free trial terms and conditions			 -->
+<!-- 									<span class="btn btn-primary field_input hotspot_button" onclick='do_login()' style="width: 257px" data-loading-text="Logging In..."><i class='fa fa-signal '></i> &nbsp;<?=$hotspot['free_trial_button_text']?></span> -->
+
+								<!-- Disable the line below when enabling the line above -->
+								<a class="btn btn-primary field_input hotspot_button" href="{{trial_login_link}}" style="width: 257px" data-loading-text="Logging In..."><i class='fa fa-signal '></i> &nbsp;{{free_trial_button_text}}</a>
+
+							</div>
+						</form>
+					</div>
+
+
+
+
+
+					<div id="trial_limit_reached" class="tile" style="{{show_trial_limit_reached}}">
+						<div class="alert alert-danger" style=" margin-top: 0px; margin-bottom: 5px; padding: 5px;  border: 2px solid #AF4341;  text-align:center;">
+							Daily free limit of {{free_trial_details}} reached
+						</div>
+					</div>
+
+
+
+
+
+					<div id="portal" class="tile">
+						<div style="margin-top: 15px; margin-bottom: 10px; text-align:center;">
+							<a class="btn btn-warning field_input hotspot_button" href='{{portal_link}}'><i class='fa fa-university '></i> &nbsp; {{portal_link_button_text}}</a>
+						</div>
+					</div>
+
+
+
+
+					<div class="tile ">
+
+						<div class="alert alert-success" style=" {{show_voucher_purchased}} margin-top: 10px; margin-bottom: 0px; padding: 5px;  border: 2px solid #459605; text-align:center;">
+							<h4 style="margin-bottom: 0px; border-bottom-width: 0px;">
+								You have successfully purchased a hotspot voucher.
+								<br>
+								Voucher: <b>{{voucher_number}}</b>,  PIN: <b>{{voucher_pin}}</b>
+							</h4>
+						</div>
+
+
+						<form name='login'  class="form-horizontal" action='{{login_link}}' method='post' style="margin-bottom: 5px; border: 0px solid #459605;   text-align:center;">
+							<div class="box-content" style="padding-bottom: 10px;">
+
+								<h4>{{login_text}}</h4>
+
+								<div class="control-group" style="margin-bottom: 10px;">
+									<div class="controls controls-row" style="margin-left: 0px;">
+										<input type='text' class='field_input' id='username' placeholder='Username or Voucher No' name='username' value="{{voucher_number}}"  {{enable_disable_autocomplete}} >
+									</div>
+								</div>
+
+								<div class="control-group" style="margin-bottom: 10px;" >
+									<div class="controls controls-row" style="margin-left: 0px;">
+										<input type="password" class="field_input" id="password" name="password" placeholder="Password or Voucher PIN" value="{{voucher_pin}}"  {{enable_disable_autocomplete}} >
+									</div>
+								</div>
+
+								<div class="alert alert-danger" style="{{show_error}} margin-top: 0px; margin-bottom: 5px; padding: 5px;  border: 2px solid #AF4341;  text-align:center;">
+									{{error}}
+								</div>
+
+								<button  type="submit" id="login" class="btn btn-success field_input hotspot_button"  data-loading-text="Logging In..."><i class='fa fa-lock '></i> &nbsp; Login</button>
+
+							</div>
+
+							<input type='hidden' name='domain' value=''>
+							<input type='hidden' name='dst' value='{{dst}}'>
+						</form>
+					</div>
+
+
+
+					<div id='prepaid_buttons' class="tile" >
+						<div id='prepaid_buttons' class="box-content" style="margin-bottom: 5px; border: 0px solid #3276B1;  text-align:center;">
+							<h4 style='margin-bottom: 0px;'>Prepaid Services</h4>
+							<span style='font-weight:300;font-size: 13px;'>{{prepaid_intro_text}}</span>
+
+							<div style="margin-top: 5px; margin-bottom: 10px;  text-align:center;">
+								<a href='/register' class="btn btn-inverse field_input hotspot_button hotspot_button"><i class='fa fa-fw fa-user '></i> &nbsp; Register for a Prepaid Service &nbsp;&nbsp;</a>
+							</div>
+							<div style="margin-top: 10px; margin-bottom: 5px;  text-align:center;">
+								<a href='/login' class="btn btn-inverse field_input hotspot_button hotspot_button"><i class='fa fa-fw fa-signal '></i> &nbsp;    Login to Topup Prepaid Service</a>
+							</div>
+						</div>
+					</div>
+
+
+
+
+					<div id='purchase_buttons' class="tile"  style='text-align:center;'>
+						<h4>Hotspot vouchers are available {{buy_location_details}}</h4>
+
+						<div style=" border: 0px solid #D2322D;text-align:center;">
+
+						<h4>Purchase a Hotspot Voucher</h4>
+
+						<div class="alert alert-danger" style="{{display_voucher_error}} margin-top: 0px; margin-bottom: 5px; padding: 5px;  border: 2px solid #AF4341;  text-align:center;">
+							{{voucher_error}}
+						</div>
+
+						{{products_array}}
+							<a class='btn btn-inverse field_input hotspot_button' href='{{product_purchase_link}}'>
+								<span class='pull-right'>{{currency}} {{product_cost}}</span>
+								<span class='pull-left'>{{product_title}}</span>
+							</a>
+							<br>
+							<small span='{{product_expire_months_show}}'>(Expires {{product_expire_months}} after purchase)<br><br></small>
+						{{/products_array}}
+
+						</div>
+					</div>
+
+
+<!-- 				To see a single purchase button instead of a list of buttons use the block below instead of the block above -->
+
+					<div id='purchase_button' class="tile"  style='text-align:center;'>
+						<div style="margin-top: 5px; margin-bottom: 10px;  text-align:center;">
+							<a href='{{purchase_link}}' class="btn btn-inverse field_input hotspot_button"><i class='fa fa-fw fa-shopping-cart '></i> &nbsp; Purchase Voucher &nbsp;&nbsp;</a>
+						</div>
+					</div>
+
+
+				</div> <!-- tiles -->
+
+			</div>
+		</div>
+
+
+		<script type="text/javascript">
+			function do_login(){
+				if ($('#accept_terms').is(":checked")){
+					if ( {{terms_accepted_true_false}} ){
+						document.location.href ='{{link_login_only}}?dst={{link_orig_esc}}&username=T-{{mac}}';
+					} else {
+						$('#hidden_div').load('/hotspot/accept_terms?mac={{mac}}&hotspot={{id}}',function(){
+							document.location.href ='{{link_login_only}}?dst={{link_orig_esc}}&username=T-{{mac}}';
+						});
+					}
+
+				} else {
+					bootbox.dialog({
+						message: "You must accept the <a href='/hotspot/terms_and_conditions?id={{id}}&mobile={{mobile}}&device={{device}}'>Terms & Conditions</a> before you can access free internet",
+						title: "Accept Terms & Conditions",
+						buttons: {
+							"Cancel": {
+								className: "btn-primary pull-left",
+								callback: function() {}
+							},
+							success: {
+								label: "Accept",
+								className: "btn-danger",
+								callback: function() {
+									$('#hidden_div').load('/hotspot/accept_terms?mac={{mac}}&hotspot={{id}}',function(){
+										document.location.href ='{{link_login_only}}?dst={{link_orig_esc}}&username=T-{{mac}}';
+									});
+								}
+							}
+						}
+					});
+
+				}
+			}
+
+		</script>
