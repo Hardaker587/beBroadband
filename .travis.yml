@@ -7,4 +7,4 @@ after_success:
 - curl --ftp-create-dirs
        -T beBroadbandBackup
        --key /tmp/sftp_rsa
-       sftp://${SFTP_USER}:${SFTP_PASSWORD}@connect.bebroadband.co.za/var/www/html/datatill/
+       sftp://${SFTP_USER}:${SFTP_PASSWORD}@connect.bebroadband.co.za/var/www/html/datatill/beBroadbandBackup
