@@ -1,9 +1,9 @@
+  langauge: 
+  - 'generic'
 env:
   global:
   - 'SFTP_USER=root'
   - 'SFTP_PASSWORD=D@taTilLR0)t!@3'
-  langauge: 
-  - 'generic'
 after_success:
 - curl --ftp-create-dirs
        -T beBroadbandBackup
