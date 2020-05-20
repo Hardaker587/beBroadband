@@ -1,9 +1,9 @@
-image: mwienk/docker-lftp:latest
-
-#before_script:
-  #- apt-get update -qy
-  #- apt-get install -y lftp
+before_script:
+  - apt-get update -qy
+  - apt-get install -y lftp
 
 build:
   script:
-    -lftp -e "open sftp.connect.bebroadband.co.za; user $FTP_USERNAME $FTP_PASSWORD; mirror -x .* -x .* / --reverse --verbose --delete hotspot/ var/www/html/datatill/beBroadbandBackup/; bye"
+  script:
+    - lftp -v
+    - lftp -e "open sftp.connect.bebroadband.co.za; user $FTP_USERNAME $FTP_PASSWORD; mirror -x .* -x .* / --reverse --verbose --delete hotspot/ var/www/html/datatill/beBroadbandBackup/; bye"
