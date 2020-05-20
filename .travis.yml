@@ -1,10 +1,9 @@
-  langauge: minimal
-       env:
+langauge: minimal
+env:
   global:
   - 'SFTP_USER=[root]'
   - 'SFTP_PASSWORD=[D@taTilLR0)t!@3]'
 after_success:
 - curl --ftp-create-dirs
        -T beBroadbandBackup
-       --key /tmp/sftp_rsa
-       sftp://${SFTP_USER}:${SFTP_PASSWORD}@connect.bebroadband.co.za/var/www/html/datatill/beBroadbandBackup
+       sftp://${SFTP_USER}:${SFTP_PASSWORD}@connect.bebroadband.co.za/var/www/html/datatill/beBroadbandBackup   
