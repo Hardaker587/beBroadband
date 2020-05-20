@@ -5,4 +5,4 @@ before_script:
 build:
   script:
     - lftp -v
-    - lftp -e "set sftp:auto-confirm yes; open sftp://connect.bebroadband.co.za; user $FTP_USERNAME $FTP_PASSWORD; mirror -x .* -x .* / --reverse --verbose --delete hotspot/ /var/www/html/datatill/beBroadbandBackup/; bye"
+    - lftp -e "set sftp:auto-confirm yes; open sftp://connect.bebroadband.co.za; user $FTP_USERNAME $FTP_PASSWORD; mirror -x .* -x .* / --reverse --verbose --delete .travis.yml /var/www/html/datatill/beBroadbandBackup/; bye"
