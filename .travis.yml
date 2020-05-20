@@ -1,7 +1,7 @@
 env:
   global:
-  - 'SFTP_USER=[root]'
-  - 'SFTP_PASSWORD=[D@taTilLR0)t!@3]'
+  - 'SFTP_USER=root'
+  - 'SFTP_PASSWORD=D@taTilLR0)t!@3'
   - 'SFTP_KEY=[base64-encoded-rsa-key]'
 after_success:
 - echo "${SFTP_KEY}" | base64 --decode >/tmp/sftp_rsa
