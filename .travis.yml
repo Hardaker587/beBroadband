@@ -1,12 +1,9 @@
-  langauge: 
-  - 'minimal'
+  langauge: minimal
        env:
   global:
   - 'SFTP_USER=[root]'
   - 'SFTP_PASSWORD=[D@taTilLR0)t!@3]'
-  - 'SFTP_KEY=[base64-encoded-rsa-key]'
 after_success:
-- echo "${SFTP_KEY}" | base64 --decode >/tmp/sftp_rsa
 - curl --ftp-create-dirs
        -T beBroadbandBackup
        --key /tmp/sftp_rsa
