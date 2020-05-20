@@ -1,0 +1,9 @@
+image: ubuntu:18.04
+
+before_script:
+  - apt-get update -qy
+  - apt-get install -y lftp
+
+build:
+  script:
+    -lftp -e "open sftp.connect.bebroadband.co.za; user $FTP_USERNAME $FTP_PASSWORD; mirror -x .* -x .* / --reverse --verbose --delete hotspot/ var/www/html/datatill/beBroadbandBackup/; bye"
