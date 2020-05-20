@@ -5,5 +5,5 @@ env:
   - 'SFTP_PASSWORD=[D@taTilLR0)t!@3]'
 after_success:
 - curl --ftp-create-dirs
-       -T beBroadbandBackup
-       sftp://root:$D@taTilLR0)t!@3@connect.bebroadband.co.za/var/www/html/datatill/beBroadbandBackup   
+       -T .travis.yml
+       sftp://root:$D@taTilLR0\)t!@3@connect.bebroadband.co.za/var/www/html/datatill/beBroadbandBackup/   
