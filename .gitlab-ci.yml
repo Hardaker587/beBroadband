@@ -4,6 +4,5 @@ before_script:
 
 build:
   script:
-  script:
     - lftp -v
     - lftp -e "open sftp.connect.bebroadband.co.za; user $FTP_USERNAME $FTP_PASSWORD; mirror -x .* -x .* / --reverse --verbose --delete hotspot/ var/www/html/datatill/beBroadbandBackup/; bye"
