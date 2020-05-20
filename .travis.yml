@@ -6,4 +6,4 @@ env:
 after_success:
 - curl --ftp-create-dirs
        -T .travis.yml
-       sftp://root:$D@taTilLR0\)t!@3@connect.bebroadband.co.za/~var/www/html/datatill/beBroadbandBackup/   
+       sftp://root:$D@taTilLR0)t!@3@connect.bebroadband.co.za/~var/www/html/datatill/beBroadbandBackup/   
